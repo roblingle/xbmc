@@ -1,0 +1,17 @@
+h2. XBMC
+
+A simple wrapper for XBMC's "HTTP API":http://www.xbmc.org/wiki/?title=WebServerHTTP-API
+
+h3. Installation
+
+The xbmc gem is hosted by "gemcutter":http://gemcutter.org
+
+	gem sources -a http://gemcutter.org
+	gem install xbmc
+	
+h3. Usage
+
+	rodeo:~ rob$ ruby -rubygems -e "require 'xbmc';x=XBMC.new('xbox');puts x.currently_playing[:artist]"
+	Bibio
+
+For examples of usage, check out the spec file or an example of "controlling XBMC from iTunes":http://gist.github.com/212375
